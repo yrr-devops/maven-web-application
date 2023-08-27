@@ -9,8 +9,8 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Technologies Pvt Ltd. Andhra Pradesh,India,522415. </h1>
-<h1 align="center"> New Batch will be start in August 31st  at 7.30 PM IST - Contact 9980923226/9980923216 or devopstrainingblr@gmail.com</h1> 
+<h1 align="center">Welcome to Mithun Technologies Pvt Ltd. Andhra Pradesh,Hyderabad,India,500085. </h1>
+<h1 align="center"> New Batch will be start in September 1st  at 7.30 PM IST - Contact 9980923226/9980923216 or devopstrainingblr@gmail.com</h1> 
 <h1 align="center"> Mithun Technologies- Very Good Training center for DevOps with AWS in Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <br>
