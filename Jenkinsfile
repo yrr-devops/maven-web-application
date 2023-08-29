@@ -18,7 +18,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     }
     stage('TOMCAT'){
         sshagent(['df5af88e-c06c-4572-9b57-8545831cdaea']) {
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@54.167.79.226:/opt/apache-tomcat-9.0.79/webapps/"
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@10.42.1.249:/opt/apache-tomcat-9.0.79/webapps/"
 }
     }
 }
