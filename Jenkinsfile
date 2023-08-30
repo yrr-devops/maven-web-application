@@ -4,6 +4,7 @@ node {
     echo "build number is: ${env.BUILD_NUMBER}"
 def mavenHome = tool name: "maven3.9.3"
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
+    sendSlackNotifications('STARTED')
     try{
     stage('GIT'){
         git branch: 'development', changelog: false, credentialsId: 'ba021c92-6058-4518-9726-7e1fa11e888c', poll: false, url: 'https://github.com/yrr-devops/maven-web-application.git'
