@@ -23,6 +23,9 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@10.42.1.249:/opt/apache-tomcat-9.0.79/webapps/"
 }
     } 
+        stage('Trigger DownStreamJob'){
+            build job: 'pipelinescriptwithbuildparams'
+        }
     }catch(e){
         currentBuild.result="FAILED"
         throw e
