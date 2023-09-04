@@ -21,7 +21,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     }
     stage('TOMCAT'){
         sshagent(['df5af88e-c06c-4572-9b57-8545831cdaea']) {
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@34.201.112.177:/opt/apache-tomcat-9.0.79/webapps/"
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@18.215.158.97:/opt/apache-tomcat-9.0.79/webapps/"
 }
     } 
         stage('Trigger DownStreamJob'){
