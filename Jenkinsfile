@@ -1,3 +1,4 @@
+@Library('sharedlibsmt') _
 node('nodes') {
     echo "job name is: ${env.JOB_NAME}"
     echo "node name is: ${env.NODE_NAME}"
@@ -36,7 +37,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 }
 
 
-
+/*
 def sendSlackNotifications(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESS'
@@ -61,4 +62,5 @@ def sendSlackNotifications(String buildStatus = 'STARTED') {
 
   // Send notifications
   slackSend (color: colorCode, message: summary, channel: 'walmart')
+  */
 }
